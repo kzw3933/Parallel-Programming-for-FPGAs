@@ -1,7 +1,7 @@
-# 1 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp"
+# 1 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp"
+# 1 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp"
 # 1 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 1 3
 # 10 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
 # 1 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 1 3
@@ -933,7 +933,7 @@ extern "C" {
 
 # 1 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h" 1 3
 # 1038 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
-# 2 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp" 2
+# 2 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp" 2
 # 1 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h" 1 3
 # 37 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/math.h" 3
 # 1 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cmath" 1 3
@@ -3509,7 +3509,7 @@ using std::scalbln;
 using std::scalbn;
 using std::tgamma;
 using std::trunc;
-# 3 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp" 2
+# 3 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp" 2
 # 1 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/stdlib.h" 1 3
 # 37 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/stdlib.h" 3
 # 1 "E:/yapps/Xilink/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/include/c++/6.2.0/cstdlib" 1 3
@@ -4335,15 +4335,15 @@ using std::system;
 
 using std::wcstombs;
 using std::wctomb;
-# 4 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp" 2
-# 1 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir.h" 1
+# 4 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp" 2
+# 1 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir.h" 1
 
 
 
 
 
 
-# 6 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir.h"
+# 6 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir.h"
 const int N = 11;
 
 typedef int coef_t;
@@ -4352,7 +4352,7 @@ typedef int acc_t;
 
 
 void fir(data_t *y, data_t x);
-# 5 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp" 2
+# 5 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp" 2
 
 
 int main() {
@@ -4379,36 +4379,36 @@ int main() {
     printf("Comparing against output data \n");
     if(system("diff -w out.dat out.gold.dat")) {
         fprintf(
-# 30 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp" 3
+# 30 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp" 3
                (&__iob_func()[1])
-# 30 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp"
+# 30 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp"
                      , "*********************************************\n");
         fprintf(
-# 31 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp" 3
+# 31 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp" 3
                (&__iob_func()[1])
-# 31 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp"
+# 31 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp"
                      , "FAIL: Output DOES NOT match the golden output\n");
         fprintf(
-# 32 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp" 3
+# 32 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp" 3
                (&__iob_func()[1])
-# 32 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp"
+# 32 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp"
                      , "*********************************************\n");
         return 1;
     } else {
         fprintf(
-# 35 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp" 3
+# 35 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp" 3
                (&__iob_func()[1])
-# 35 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp"
+# 35 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp"
                      , "*******************************************\n");
         fprintf(
-# 36 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp" 3
+# 36 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp" 3
                (&__iob_func()[1])
-# 36 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp"
+# 36 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp"
                      , "PASS: The output matches the golden output!\n");
         fprintf(
-# 37 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp" 3
+# 37 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp" 3
                (&__iob_func()[1])
-# 37 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/baseline/fir_test.cpp"
+# 37 "C:/Users/Administrator/Desktop/Parallel-Programming-for-FPGAs/FIR/fir_test.cpp"
                      , "*******************************************\n");
         return 0;
     }

@@ -1,2 +1,1 @@
-obj/fir_test.o: ../../../../baseline/fir_test.cpp \
- ../../../../baseline/fir.h
+obj/fir_test.o: ../../../../fir_test.cpp ../../../../fir.h

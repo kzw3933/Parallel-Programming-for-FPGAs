@@ -17,7 +17,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../baseline/fir_test.cpp ../../../../baseline/fir.cpp
+HLS_SOURCES = ../../../../fir_test.cpp ../../../../5.loop_pipelining/fir.cpp
 
 override TARGET := csim.exe
 
@@ -73,14 +73,14 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/fir_test.o: ../../../../baseline/fir_test.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../baseline/fir_test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/fir_test.o: ../../../../fir_test.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../fir_test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/fir_test.d
 
-$(ObjDir)/fir.o: ../../../../baseline/fir.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../baseline/fir.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/fir.o: ../../../../5.loop_pipelining/fir.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../5.loop_pipelining/fir.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/fir.d
