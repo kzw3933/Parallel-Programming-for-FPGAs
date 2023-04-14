@@ -1,1 +1,1 @@
-    E:/yapps/Xilink/Vitis_HLS/2022.2/bin/vitis_hls run_sim.tcl
+    D:/Xilink/Vivado/2020.1/bin/vivado_hls run_sim.tcl
