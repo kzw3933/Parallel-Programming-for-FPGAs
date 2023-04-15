@@ -10,4 +10,4 @@ typedef double TEMP_TYPE;
 
 void dft(IN_TYPE sample_real[N], IN_TYPE sample_imag[N]);
 
-#endif // _DFT_H
+#endif /* DFT_H */
